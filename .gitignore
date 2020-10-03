@@ -142,4 +142,5 @@ week_4_GoogleAPI/austin_crime.csv
 **/*.docx
 *.db
 **/Frauenloop_intro_python-master
-**/My solutions/*.ipynb
+week_2_write_functions_and_tests/My solutions/*.ipynb
+brudnopis.ipynb
