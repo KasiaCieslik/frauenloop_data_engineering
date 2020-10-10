@@ -9,7 +9,7 @@ import matplotlib
 
 test_df_clean_data = pd.DataFrame({'x1':[0,1,2,3,4],'location':[2,3,4,np.nan,6]})
 def test_clean_data():
-    """Testing which index will be drop from dataframe"""
+    """Testing which index will be droped from dataframe"""
     original_index = set(test_df_clean_data.index)
     clean_df = AustinCrime.clean_data(test_df_clean_data)
     clean_index = set(clean_df.index)
@@ -17,7 +17,7 @@ def test_clean_data():
     
 test_df_clean_data1 = pd.DataFrame({'x1':[0,1,2,3,4],'location':[2,3,4,0,6]})
 def test_clean_data_no_null():
-    """Testinf if df before and after clean_data is the same"""
+    """Testing if df before and after clean_data is the same"""
     clean_df = AustinCrime.clean_data(test_df_clean_data1)
     
     assert test_df_clean_data1.equals(clean_df)
